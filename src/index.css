@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0a0e14;
+  color: #e8eef5;
+  font-family: Inter, system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Flowing connector animation between stages */
+@keyframes flow {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 32px; }
+}
+
+.flow-line {
+  background-image: linear-gradient(to bottom, #2dff8f 40%, transparent 40%);
+  background-size: 2px 16px;
+  background-repeat: repeat-y;
+  animation: flow 1.2s linear infinite;
+}
+
+/* Subtle pulse on the live dot */
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+
+.live-dot {
+  animation: pulse-dot 1.6s ease-in-out infinite;
+}
+
+/* Card hover lift */
+.stage-card {
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+.stage-card:hover {
+  transform: translateY(-4px);
+  border-color: #2dff8f;
+}
+
+/* Respect reduced motion: kill animations and smooth scroll */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .flow-line, .live-dot { animation: none; }
+  .stage-card { transition: none; }
+  .stage-card:hover { transform: none; }
+}
