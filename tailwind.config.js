@@ -4,17 +4,19 @@ export default {
   theme: {
     extend: {
       colors: {
-        ink: '#0a0e14',
-        panel: '#10161f',
-        line: '#1e2a38',
-        signal: '#2dff8f',
-        dim: '#8b98a9',
+        ink: '#0a0a0a',
+        coal: '#141414',
+        smoke: '#1f1f1f',
+        signal: '#f6121d',
+        signalDark: '#b30d16',
+        bone: '#f5f5f5',
+        ash: '#a3a3a3',
       },
       fontFamily: {
-        mono: ['"JetBrains Mono"', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'monospace'],
-        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+        display: ['"Bebas Neue"', 'sans-serif'],
+        body: ['Inter', 'sans-serif'],
       },
     },
   },
   plugins: [],
-}
+};

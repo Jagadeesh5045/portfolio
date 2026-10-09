@@ -1,53 +1,34 @@
-import { useEffect, useState } from 'react';
-import PipelineNav from './components/PipelineNav';
-import Ingest from './components/Ingest';
-import Retrieve from './components/Retrieve';
-import Rerank from './components/Rerank';
-import Generate from './components/Generate';
-import Evaluate from './components/Evaluate';
-import { stages } from './data/portfolio';
-
-function Connector() {
-  return (
-    <div className="mx-auto flex max-w-5xl justify-start px-4" aria-hidden="true">
-      <div className="flow-line ml-6 h-10 w-[2px] sm:ml-10" />
-    </div>
-  );
-}
+import { useState } from 'react';
+import { ROWS, type Title } from './data/content';
+import Preloader from './components/Preloader';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import ContentRow from './components/Row';
+import DetailModal from './components/DetailModal';
+import About from './components/About';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 export default function App() {
-  const [active, setActive] = useState<string>('ingest');
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        for (const e of entries) {
-          if (e.isIntersecting) setActive(e.target.id);
-        }
-      },
-      { rootMargin: '-40% 0px -55% 0px' }
-    );
-    stages.forEach((s) => {
-      const el = document.getElementById(s.id);
-      if (el) observer.observe(el);
-    });
-    return () => observer.disconnect();
-  }, []);
+  const [loading, setLoading] = useState(true);
+  const [selected, setSelected] = useState<Title | null>(null);
 
   return (
-    <div className="min-h-screen bg-ink">
-      <PipelineNav active={active} />
+    <div className="min-h-screen bg-ink font-body text-bone antialiased">
+      {loading && <Preloader onDone={() => setLoading(false)} />}
+      <Navbar />
       <main>
-        <Ingest />
-        <Connector />
-        <Retrieve />
-        <Connector />
-        <Rerank />
-        <Connector />
-        <Generate />
-        <Connector />
-        <Evaluate />
+        <Hero onMoreInfo={setSelected} />
+        <div className="relative z-10 -mt-10">
+          {ROWS.map((row) => (
+            <ContentRow key={row.id} row={row} onSelect={setSelected} />
+          ))}
+        </div>
+        <About />
+        <Contact />
       </main>
+      <Footer />
+      <DetailModal title={selected} onClose={() => setSelected(null)} />
     </div>
   );
 }
