@@ -105,6 +105,24 @@ export const ROWS: Row[] = [
     subtitle: 'models, pipelines and dashboards',
     items: [
       {
+        id: 'drift-guard',
+        name: 'drift-guard',
+        tagline: 'Train it, prove it, watch it in production.',
+        description:
+          'ML training, evaluation and deployment-readiness pipeline: 3-model bake-off with 5-fold CV (tuned logistic regression champion, CV ROC-AUC 0.9959), JSONL experiment registry, holdout model card (ROC-AUC 0.9954), PSI drift monitoring, and a FastAPI inference service. 8 tests green.',
+        year: '2026',
+        badge: 'Project',
+        tags: ['Python', 'Scikit-learn', 'FastAPI', 'MLOps'],
+        metrics: ['Holdout ROC-AUC 0.9954', 'PSI drift monitoring', '8 tests green'],
+        links: [
+          {
+            label: 'View on GitHub',
+            url: 'https://github.com/Jagadeesh5045/AI-builds/tree/main/projects/drift-guard',
+          },
+        ],
+        art: 'linear-gradient(135deg, #06281f 0%, #065f46 60%, #34d399 100%)',
+      },
+      {
         id: 'churn-x',
         name: 'churn-x',
         tagline: 'Churn prediction you can explain.',
