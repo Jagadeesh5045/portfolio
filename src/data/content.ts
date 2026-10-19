@@ -105,6 +105,24 @@ export const ROWS: Row[] = [
     subtitle: 'models, pipelines and dashboards',
     items: [
       {
+        id: 'experiment-lab',
+        name: 'experiment-lab',
+        tagline: 'Would you have shipped it? Prove it.',
+        description:
+          'A/B testing and experimentation statistics toolkit: two-proportion z-test, Bayesian A/B, CUPED variance reduction (34.9% on average order value), SPRT early stopping and a peeking audit on a realistic 4,000-user checkout experiment. Lift +1.84pp, p=0.0212, verdict: ship it. 13 tests green.',
+        year: '2026',
+        badge: 'Project',
+        tags: ['Python', 'Statistics', 'Experimentation'],
+        metrics: ['Lift +1.84pp, p=0.0212', 'CUPED variance cut 34.9%', '13 tests green'],
+        links: [
+          {
+            label: 'View on GitHub',
+            url: 'https://github.com/Jagadeesh5045/AI-builds/tree/main/projects/experiment-lab',
+          },
+        ],
+        art: 'linear-gradient(135deg, #1a1033 0%, #5b21b6 60%, #a78bfa 100%)',
+      },
+      {
         id: 'drift-guard',
         name: 'drift-guard',
         tagline: 'Train it, prove it, watch it in production.',
@@ -309,7 +327,7 @@ export const PROFILE = {
   ],
   stats: [
     { value: '2+', label: 'Years shipping Python backends' },
-    { value: '15', label: 'Projects and experiments live' },
+    { value: '16', label: 'Projects and experiments live' },
     { value: '20', label: 'Citations in the judge vs verifier study' },
     { value: 'MSc', label: 'Artificial Intelligence, Aston' },
   ],
