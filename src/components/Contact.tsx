@@ -38,6 +38,22 @@ export default function Contact() {
           >
             GitHub
           </a>
+          <a
+            href={PROFILE.scholar}
+            target="_blank"
+            rel="noreferrer"
+            className="rounded bg-smoke px-8 py-3 text-base font-semibold text-bone transition-colors hover:bg-white/15"
+          >
+            Google Scholar
+          </a>
+          <a
+            href={PROFILE.orcid}
+            target="_blank"
+            rel="noreferrer"
+            className="rounded bg-smoke px-8 py-3 text-base font-semibold text-bone transition-colors hover:bg-white/15"
+          >
+            ORCID
+          </a>
         </div>
       </motion.div>
     </section>

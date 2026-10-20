@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jagadeesh5045.github.io/portfolio/sitemap.xml

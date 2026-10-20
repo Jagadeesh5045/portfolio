@@ -319,6 +319,8 @@ export const PROFILE = {
   email: 'Padalajagadeesh578@gmail.com',
   linkedin: 'https://www.linkedin.com/in/jagadeesh5045/',
   github: 'https://github.com/Jagadeesh5045',
+  orcid: 'https://orcid.org/0009-0006-5399-4805',
+  scholar: 'https://scholar.google.com/citations?user=Loygz-EAAAAJ',
   rightToWork: 'Graduate visa from December 2026, no sponsorship required.',
   bio: [
     'I am an AI engineer in Birmingham, UK. I build LLM systems that hold up under scrutiny: retrieval pipelines, eval harnesses, and guards against hallucination.',

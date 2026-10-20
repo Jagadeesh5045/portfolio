@@ -21,6 +21,12 @@ export default function Footer() {
             <a href="https://medium.com/@padalajagadeesh578" target="_blank" rel="noreferrer" className="text-ash transition-colors hover:text-bone">
               Medium
             </a>
+            <a href={PROFILE.scholar} target="_blank" rel="noreferrer" className="text-ash transition-colors hover:text-bone">
+              Google Scholar
+            </a>
+            <a href={PROFILE.orcid} target="_blank" rel="noreferrer" className="text-ash transition-colors hover:text-bone">
+              ORCID
+            </a>
           </div>
         </div>
         <div className="mt-8 flex flex-col justify-between gap-2 border-t border-white/10 pt-6 text-xs text-ash/70 md:flex-row">
