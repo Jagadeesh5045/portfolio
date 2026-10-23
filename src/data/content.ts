@@ -97,6 +97,24 @@ export const ROWS: Row[] = [
         ],
         art: 'linear-gradient(135deg, #1e1b4b 0%, #4c1d95 60%, #8b5cf6 100%)',
       },
+      {
+        id: 'rag-router',
+        name: 'rag-router',
+        tagline: 'The right retrieval path for every query.',
+        description:
+          'Hybrid query router for RAG: a scikit-learn classifier routes each query to vector search, BM25, or NL-to-SQL over a DuckDB warehouse. Routing accuracy 0.926 on a 54-query eval, keyword recall@5 1.000, SQL answers 30/30 exact, with latency/quality trade-off evals and a FastAPI ask endpoint.',
+        year: '2026',
+        badge: 'Project',
+        tags: ['Python', 'RAG', 'Scikit-learn', 'FastAPI', 'DuckDB'],
+        metrics: ['Routing accuracy 0.926', 'SQL answers 30/30 exact', 'Keyword recall@5 1.000'],
+        links: [
+          {
+            label: 'View on GitHub',
+            url: 'https://github.com/Jagadeesh5045/AI-builds/tree/main/flagship/rag-router',
+          },
+        ],
+        art: 'linear-gradient(135deg, #1f0a14 0%, #9d174d 60%, #f472b6 100%)',
+      },
     ],
   },
   {
