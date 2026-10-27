@@ -123,6 +123,24 @@ export const ROWS: Row[] = [
     subtitle: 'models, pipelines and dashboards',
     items: [
       {
+        id: 'retail-warehouse',
+        name: 'retail-warehouse',
+        tagline: 'A warehouse that survives messy source files.',
+        description:
+          'Incremental star-schema warehouse load in pure Python and SQLite: SCD Type 2 customer and product history, deduplication with late corrections winning, quarantine for unresolvable orders, and a load manifest for reconciliation. Batch 1: 403 source rows to 400 facts with 1 quarantined; batch 2 adds 180 new orders, 8 movers and 3 price rises; re-runs are idempotent. 14 tests green, 580 fact orders, 460 completed orders, £50,029.15 revenue.',
+        year: '2026',
+        badge: 'Project',
+        tags: ['Python', 'SQL', 'SQLite', 'Data engineering'],
+        metrics: ['580 fact orders', 'SCD Type 2 history', '14 tests green'],
+        links: [
+          {
+            label: 'View on GitHub',
+            url: 'https://github.com/Jagadeesh5045/AI-builds/tree/main/projects/retail-warehouse',
+          },
+        ],
+        art: 'linear-gradient(135deg, #0a1f1a 0%, #0f766e 60%, #2dd4bf 100%)',
+      },
+      {
         id: 'experiment-lab',
         name: 'experiment-lab',
         tagline: 'Would you have shipped it? Prove it.',
@@ -337,6 +355,7 @@ export const PROFILE = {
   email: 'Padalajagadeesh578@gmail.com',
   linkedin: 'https://www.linkedin.com/in/jagadeesh5045/',
   github: 'https://github.com/Jagadeesh5045',
+  medium: 'https://medium.com/@padalajagadeesh578',
   orcid: 'https://orcid.org/0009-0006-5399-4805',
   scholar: 'https://scholar.google.com/citations?user=Loygz-EAAAAJ',
   rightToWork: 'Graduate visa from December 2026, no sponsorship required.',
@@ -347,7 +366,7 @@ export const PROFILE = {
   ],
   stats: [
     { value: '2+', label: 'Years shipping Python backends' },
-    { value: '16', label: 'Projects and experiments live' },
+    { value: '24', label: 'Daily AI experiments shipped' },
     { value: '20', label: 'Citations in the judge vs verifier study' },
     { value: 'MSc', label: 'Artificial Intelligence, Aston' },
   ],
@@ -357,9 +376,17 @@ export const PROFILE = {
     'Natural Language Processing',
     'Scikit-learn',
     'TensorFlow',
+    'PyTorch',
+    'Hugging Face',
+    'LangGraph',
+    'ChromaDB',
     'Data engineering',
     'SQL',
     'Flask and FastAPI',
+    'Docker',
+    'AWS',
+    'Spark',
+    'Power BI',
     'Evaluation and guardrails',
   ],
 };

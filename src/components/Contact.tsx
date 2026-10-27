@@ -39,6 +39,14 @@ export default function Contact() {
             GitHub
           </a>
           <a
+            href={PROFILE.medium}
+            target="_blank"
+            rel="noreferrer"
+            className="rounded bg-smoke px-8 py-3 text-base font-semibold text-bone transition-colors hover:bg-white/15"
+          >
+            Medium
+          </a>
+          <a
             href={PROFILE.scholar}
             target="_blank"
             rel="noreferrer"
