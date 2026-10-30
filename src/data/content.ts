@@ -177,6 +177,24 @@ export const ROWS: Row[] = [
         art: 'linear-gradient(135deg, #06281f 0%, #065f46 60%, #34d399 100%)',
       },
       {
+        id: 'mlops-credit',
+        name: 'mlops-credit',
+        tagline: 'A scoring model that watches itself in production.',
+        description:
+          'End-to-end MLOps for credit default prediction: a JSON model registry, a 90/10 canary deploy where the challenger is promoted only on +0.02 ROC-AUC, and PSI drift monitoring that retrains automatically when drift crosses threshold. 5,000 synthetic applicants, champion ROC-AUC 0.6886, canary kept the champion, drift on income (PSI 0.3773) and late payments (PSI 1.7022) triggered retraining to v3. 4 tests green.',
+        year: '2026',
+        badge: 'Project',
+        tags: ['Python', 'Scikit-learn', 'MLOps'],
+        metrics: ['Champion ROC-AUC 0.6886', 'Canary kept the champion', 'Drift retrained to v3'],
+        links: [
+          {
+            label: 'View on GitHub',
+            url: 'https://github.com/Jagadeesh5045/AI-builds/tree/main/flagship/mlops-credit',
+          },
+        ],
+        art: 'linear-gradient(135deg, #052e22 0%, #065f46 55%, #f59e0b 100%)',
+      },
+      {
         id: 'churn-x',
         name: 'churn-x',
         tagline: 'Churn prediction you can explain.',
@@ -381,6 +399,7 @@ export const PROFILE = {
     'LangGraph',
     'ChromaDB',
     'Data engineering',
+    'MLOps',
     'SQL',
     'Flask and FastAPI',
     'Docker',
