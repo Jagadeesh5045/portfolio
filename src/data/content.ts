@@ -123,6 +123,24 @@ export const ROWS: Row[] = [
     subtitle: 'models, pipelines and dashboards',
     items: [
       {
+        id: 'saas-kpi-board',
+        name: 'saas-kpi-board',
+        tagline: 'The monthly KPI board, defined in SQL.',
+        description:
+          'SaaS subscription KPI analytics in Python, SQLite and SQL: a billing-shaped warehouse (714 customers, 5,246 snapshots, 18 months) and a named, tested SQL KPI suite covering MRR, logo and revenue churn, cohort retention, GRR and NRR, plan mix, and channel LTV, CAC and payback, generating an analyst report and CSV extracts. Latest month: MRR £48,824, 566 active customers, GRR 76.8% and NRR 95.2% at 12 months, Referral the strongest channel on LTV:CAC. 14 tests green.',
+        year: '2026',
+        badge: 'Project',
+        tags: ['Python', 'SQL', 'SQLite', 'KPI reporting'],
+        metrics: ['MRR £48,824, 566 active', 'GRR 76.8%, NRR 95.2%', '14 tests green'],
+        links: [
+          {
+            label: 'View on GitHub',
+            url: 'https://github.com/Jagadeesh5045/AI-builds/tree/main/projects/saas-kpi-board',
+          },
+        ],
+        art: 'linear-gradient(135deg, #0a1a2f 0%, #1d4ed8 60%, #38bdf8 100%)',
+      },
+      {
         id: 'retail-warehouse',
         name: 'retail-warehouse',
         tagline: 'A warehouse that survives messy source files.',
