@@ -1,6 +1,6 @@
 # Jagadeeswara Rao Padala, Portfolio
 
-A streaming-style portfolio for an AI engineer. Dark, cinematic, built with React 18, TypeScript, Vite and Tailwind CSS.
+A streaming-style portfolio for a data analyst and AI engineer, data analytics first. Dark, cinematic, built with React 18, TypeScript, Vite and Tailwind CSS.
 
 Live at https://jagadeesh5045.github.io/portfolio/
 

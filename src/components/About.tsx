@@ -29,7 +29,7 @@ export default function About() {
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.6, delay: 0.1 }}
         >
-          <h2 className="font-display text-4xl text-bone md:text-5xl">ABOUT THE ENGINEER</h2>
+          <h2 className="font-display text-4xl text-bone md:text-5xl">ABOUT THE ANALYST</h2>
           <div className="mt-4 space-y-4 text-bone/85 leading-relaxed">
             {PROFILE.bio.map((p, i) => (
               <p key={i}>{p}</p>
