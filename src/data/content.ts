@@ -164,6 +164,24 @@ export const ROWS: Row[] = [
         art: 'linear-gradient(135deg, #052e22 0%, #065f46 55%, #f59e0b 100%)',
       },
       {
+        id: 'care-wait-analytics',
+        name: 'care-wait-analytics',
+        tagline: 'Waiting lists you can trust, with an early warning for breaches.',
+        description:
+          'Health-sector flagship pairing data analytics with AI: a synthetic elective referral pipeline (6,075 raw rows, 10 data quality checks, 75 rows quarantined) into a SQLite warehouse, SQL analytics showing a median wait of 97 days and 26.4% breaching 18 weeks, a Gradient Boosting breach-risk model (ROC-AUC 0.8516), a 28-day deprivation gap, and a management briefing whose every number is verified against the warehouse before it goes out. 5 tests green.',
+        year: '2026',
+        badge: 'Project',
+        tags: ['Python', 'SQL', 'SQLite', 'Scikit-learn', 'Health analytics'],
+        metrics: ['Median wait 97 days, breach 26.4%', 'Breach-risk ROC-AUC 0.8516', '75 rows quarantined, 5 tests green'],
+        links: [
+          {
+            label: 'View on GitHub',
+            url: 'https://github.com/Jagadeesh5045/AI-builds/tree/main/flagship/care-wait-analytics',
+          },
+        ],
+        art: 'linear-gradient(135deg, #082f2e 0%, #0f766e 55%, #38bdf8 100%)',
+      },
+      {
         id: 'ticket-triage',
         name: 'ticket-triage',
         tagline: 'Support tickets, triaged by AI.',
