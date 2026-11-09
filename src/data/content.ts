@@ -48,6 +48,24 @@ export const ROWS: Row[] = [
     subtitle: 'Data analytics: pipelines, models and dashboards',
     items: [
       {
+        id: 'sql-session-lab',
+        name: 'sql-session-lab',
+        tagline: 'Raw clickstream in, honest sessions and funnels out.',
+        description:
+          'Advanced SQL analytics over a seeded clickstream (6,965 events, 800 users, 92 days) in SQLite: gaps-and-islands sessionisation with a 30-minute timeout (2,207 sessions), a session funnel (2,207 view to 406 purchase, 18.4% conversion), 7-day moving-average revenue with window frames, purchase cohort retention, and a recursive-CTE calendar spine. Revenue reconciles three ways to £30,755.34, and a fixture test caught a real float-precision bug at the 30-minute boundary. 9 tests green.',
+        year: '2026',
+        badge: 'Project',
+        tags: ['SQL', 'SQLite', 'Python', 'Window functions'],
+        metrics: ['2,207 sessions, 18.4% conversion', 'Revenue £30,755.34 reconciled 3 ways', '9 tests green'],
+        links: [
+          {
+            label: 'View on GitHub',
+            url: 'https://github.com/Jagadeesh5045/AI-builds/tree/main/projects/sql-session-lab',
+          },
+        ],
+        art: 'linear-gradient(135deg, #0f172a 0%, #0369a1 60%, #38bdf8 100%)',
+      },
+      {
         id: 'pipeline-pulse',
         name: 'pipeline-pulse',
         tagline: 'ETL with a heartbeat.',
@@ -428,6 +446,7 @@ export const PROFILE = {
   ],
   skills: [
     'SQL',
+    'Advanced SQL (window functions, CTEs)',
     'Python',
     'Power BI',
     'Excel',
