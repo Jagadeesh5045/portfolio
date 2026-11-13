@@ -48,6 +48,24 @@ export const ROWS: Row[] = [
     subtitle: 'Data analytics: pipelines, models and dashboards',
     items: [
       {
+        id: 'care-wait-analytics',
+        name: 'care-wait-analytics',
+        tagline: 'Waiting lists you can trust, with an early warning for breaches.',
+        description:
+          'Health-sector flagship pairing data analytics with AI: a synthetic elective referral pipeline into a SQLite warehouse, with 10 data-quality checks quarantining 75 rows before 6,000 waiting-list records are loaded. SQL analytics show a median wait of 97 days and a 26.4% breach rate against the 18-week target, and a Gradient Boosting breach-risk model (ROC-AUC 0.8516) flags the patients most likely to breach. A management briefing has every number verified against the warehouse before it goes out. 5 tests green.',
+        year: '2026',
+        badge: 'Flagship',
+        tags: ['Python', 'SQL', 'SQLite', 'Scikit-learn', 'Health analytics'],
+        metrics: ['6,000 records loaded, 75 quarantined', 'Median wait 97 days, breach 26.4%', 'Breach-risk ROC-AUC 0.8516'],
+        links: [
+          {
+            label: 'View on GitHub',
+            url: 'https://github.com/Jagadeesh5045/AI-builds/tree/main/flagship/care-wait-analytics',
+          },
+        ],
+        art: 'linear-gradient(135deg, #082f2e 0%, #0f766e 55%, #38bdf8 100%)',
+      },
+      {
         id: 'sql-session-lab',
         name: 'sql-session-lab',
         tagline: 'Raw clickstream in, honest sessions and funnels out.',
@@ -83,11 +101,11 @@ export const ROWS: Row[] = [
         name: 'churn-x',
         tagline: 'Churn prediction you can explain.',
         description:
-          'Customer churn prediction with explainability: GradientBoosting models, AUC and F1 evaluation, SHAP-style insights, and a what-if dashboard.',
+          'Customer churn prediction with explainability: a Gradient Boosting model trained on around 5,000 synthetic telecom customers, evaluated with ROC-AUC and F1, with SHAP explanations and a what-if dashboard so the drivers behind each prediction can be inspected.',
         year: '2026',
         badge: 'Project',
         tags: ['Python', 'Scikit-learn', 'Explainability'],
-        metrics: ['Test ROC-AUC 0.839', 'GradientBoosting models', 'SHAP-style insights', 'What-if dashboard'],
+        metrics: ['Test ROC-AUC 0.839', 'Around 5,000 synthetic telecom customers', 'SHAP explanations', 'What-if dashboard'],
         links: [{ label: 'View on GitHub', url: 'https://github.com/Jagadeesh5045/churn-x' }],
         art: 'linear-gradient(135deg, #0a1628 0%, #1e3a8a 60%, #3b82f6 100%)',
       },
@@ -182,24 +200,6 @@ export const ROWS: Row[] = [
         art: 'linear-gradient(135deg, #052e22 0%, #065f46 55%, #f59e0b 100%)',
       },
       {
-        id: 'care-wait-analytics',
-        name: 'care-wait-analytics',
-        tagline: 'Waiting lists you can trust, with an early warning for breaches.',
-        description:
-          'Health-sector flagship pairing data analytics with AI: a synthetic elective referral pipeline (6,075 raw rows, 10 data quality checks, 75 rows quarantined) into a SQLite warehouse, SQL analytics showing a median wait of 97 days and 26.4% breaching 18 weeks, a Gradient Boosting breach-risk model (ROC-AUC 0.8516), a 28-day deprivation gap, and a management briefing whose every number is verified against the warehouse before it goes out. 5 tests green.',
-        year: '2026',
-        badge: 'Project',
-        tags: ['Python', 'SQL', 'SQLite', 'Scikit-learn', 'Health analytics'],
-        metrics: ['Median wait 97 days, breach 26.4%', 'Breach-risk ROC-AUC 0.8516', '75 rows quarantined, 5 tests green'],
-        links: [
-          {
-            label: 'View on GitHub',
-            url: 'https://github.com/Jagadeesh5045/AI-builds/tree/main/flagship/care-wait-analytics',
-          },
-        ],
-        art: 'linear-gradient(135deg, #082f2e 0%, #0f766e 55%, #38bdf8 100%)',
-      },
-      {
         id: 'ticket-triage',
         name: 'ticket-triage',
         tagline: 'Support tickets, triaged by AI.',
@@ -241,13 +241,13 @@ export const ROWS: Row[] = [
       {
         id: 'rag-eval-lab',
         name: 'rag-eval-lab',
-        tagline: 'A lab for measuring retrieval quality.',
+        tagline: 'An evaluation harness for measuring retrieval quality.',
         description:
-          'RAG evaluation lab: hybrid retrieval (BM25 plus vector plus RRF), groundedness checking, and an eval dashboard for measuring retrieval quality.',
+          'An evaluation harness for RAG systems: hybrid retrieval (BM25 plus vector plus RRF) scored on precision@k, recall@k and groundedness, with an eval dashboard for tracking retrieval quality. On a constructed adversarial set it records precision@k 0.3889, recall@k 0.9583 and groundedness 0.9722.',
         year: '2026',
         badge: 'Project',
         tags: ['Python', 'RAG', 'Evaluation'],
-        metrics: ['Recall@k 0.9583', 'Hybrid retrieval pipeline', 'Groundedness checking', 'Eval dashboard'],
+        metrics: ['Precision@k 0.3889', 'Recall@k 0.9583', 'Groundedness 0.9722 on an adversarial set', 'Eval dashboard'],
         links: [{ label: 'View on GitHub', url: 'https://github.com/Jagadeesh5045/rag-eval-lab' }],
         art: 'linear-gradient(135deg, #04211f 0%, #0f4c44 55%, #14b8a6 100%)',
       },
@@ -304,6 +304,32 @@ export const ROWS: Row[] = [
           },
         ],
         art: 'linear-gradient(135deg, #1f0a14 0%, #9d174d 60%, #f472b6 100%)',
+      },
+      {
+        id: 'cascade-cost-router',
+        name: 'cascade-cost-router',
+        tagline: 'Cheap model first, frontier model only when it earns it.',
+        description:
+          'An LLM routing cascade: queries start on a cheap model and escalate to a frontier model only when confidence is low. On a 50-case fixture the cascade scored 100% accuracy against 52% for the cheap model alone, at a cost 50.7% lower than sending everything to the frontier model. 14 tests green.',
+        year: '2026',
+        badge: 'Project',
+        tags: ['Python', 'LLMs', 'Routing', 'Cost optimisation'],
+        metrics: ['Accuracy 100% vs 52% cheap-only', 'Cost 50.7% below frontier-only', '14 tests green'],
+        links: [{ label: 'View on GitHub', url: 'https://github.com/Jagadeesh5045/AI-builds' }],
+        art: 'linear-gradient(135deg, #111827 0%, #065f46 55%, #fbbf24 100%)',
+      },
+      {
+        id: 'llmon-privilege-guard',
+        name: 'llmon-privilege-guard',
+        tagline: 'Untrusted text stays data, never instructions.',
+        description:
+          'A privilege guard for LLM pipelines: content pulled from untrusted sources is fenced off so injected instructions inside it cannot steer the model. In testing, the guarded pipeline followed 0 of 4 injected instructions where a naive pipeline followed all 4, and preserved the underlying facts 8 of 8. 17 tests green.',
+        year: '2026',
+        badge: 'Project',
+        tags: ['Python', 'LLM security', 'Prompt injection', 'Guardrails'],
+        metrics: ['Injections followed 0 of 4 guarded', '4 of 4 followed without the guard', 'Facts preserved 8 of 8', '17 tests green'],
+        links: [{ label: 'View on GitHub', url: 'https://github.com/Jagadeesh5045/AI-builds' }],
+        art: 'linear-gradient(135deg, #1e293b 0%, #7c2d12 55%, #fb923c 100%)',
       },
     ],
   },
@@ -421,7 +447,7 @@ export const ROWS: Row[] = [
 
 export const PROFILE = {
   name: 'Jagadeeswara Rao Padala',
-  role: 'Data Analyst and AI Engineer',
+  role: 'Data Analyst | AI Engineer',
   location: 'Birmingham, UK',
   photo: 'https://i.postimg.cc/2ywBFKPj/profile.jpg',
   email: 'Padalajagadeesh578@gmail.com',
@@ -433,7 +459,7 @@ export const PROFILE = {
   rightToWork: 'Graduate visa from December 2026, no sponsorship required.',
   bio: [
     'I am a data analyst and AI engineer in Birmingham, UK. I turn messy data into decisions: SQL and Python analysis, Power BI dashboards, and data pipelines with quality checks you can trust.',
-    'Two years as a Python Developer building data pipelines, reporting workflows and backend services, then an MSc in Artificial Intelligence at Aston University, awarded with Merit. My Pipeline Pulse ETL runs 17 data-quality checks and quarantined 503 bad rows; my Churn-X churn model scores a test ROC-AUC of 0.839 with SHAP-style explanations.',
+    'Two years as a Python Developer building data pipelines, reporting workflows and backend services, then an MSc in Artificial Intelligence at Aston University, awarded with Merit. My Pipeline Pulse ETL runs 17 data-quality checks and quarantined 503 bad rows; my Churn-X churn model scores a test ROC-AUC of 0.839 with SHAP explanations.',
     'On the AI side, I build LLM systems that hold up under scrutiny: Code Sage AI, my agentic RAG dissertation project, and RAG Eval Lab, an evaluation harness whose retrieval hits a recall@k of 0.9583.',
     'I am looking for Data Analyst roles first, and AI Engineer roles too, anywhere in the UK. I am available immediately, with a Graduate visa from December 2026 and no sponsorship required.',
     'Every project here ships with code and numbers. Nothing is a mockup.',
