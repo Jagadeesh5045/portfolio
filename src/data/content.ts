@@ -48,6 +48,24 @@ export const ROWS: Row[] = [
     subtitle: 'Data analytics: pipelines, models and dashboards',
     items: [
       {
+        id: 'fraud-signal-analytics',
+        name: 'fraud-signal-analytics',
+        tagline: 'Fraud you can rank, with reasons you can read.',
+        description:
+          'Finance-sector flagship pairing data analytics with AI: a synthetic card-transaction pipeline into a SQLite warehouse, with 10 data-quality checks quarantining 75 rows before 12,000 transactions are loaded. SQL analytics show online as the riskiest channel at 11.20% fraud, electronics the riskiest category at 11.68%, and night-time fraud at 10.74% against 5.66% in the day. A Gradient Boosting fraud-risk model (ROC-AUC 0.8203) ranks the review queue so the riskiest 10% of transactions holds 52.8% of all fraud, each top alert comes with plain-English reasons, and a management briefing has all 12 of its numbers verified before it goes out. 7 tests green.',
+        year: '2026',
+        badge: 'Flagship',
+        tags: ['Python', 'SQL', 'SQLite', 'Scikit-learn', 'Fraud analytics'],
+        metrics: ['12,000 records loaded, 75 quarantined', 'Fraud 5.92%, £102,154.48 fraud value', 'ROC-AUC 0.8203, top-decile capture 52.8%'],
+        links: [
+          {
+            label: 'View on GitHub',
+            url: 'https://github.com/Jagadeesh5045/AI-builds/tree/main/flagship/fraud-signal-analytics',
+          },
+        ],
+        art: 'linear-gradient(135deg, #0b1220 0%, #1e40af 45%, #ca8a04 100%)',
+      },
+      {
         id: 'care-wait-analytics',
         name: 'care-wait-analytics',
         tagline: 'Waiting lists you can trust, with an early warning for breaches.',
@@ -478,6 +496,7 @@ export const PROFILE = {
     'Excel',
     'DuckDB',
     'Data engineering and ETL',
+    'Fraud and risk analytics',
     'Scikit-learn',
     'Flask and FastAPI',
     'LLM and RAG systems',
