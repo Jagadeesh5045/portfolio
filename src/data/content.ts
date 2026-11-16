@@ -84,6 +84,24 @@ export const ROWS: Row[] = [
         art: 'linear-gradient(135deg, #082f2e 0%, #0f766e 55%, #38bdf8 100%)',
       },
       {
+        id: 'groundcheck',
+        name: 'groundcheck',
+        tagline: 'Which claims in this RAG answer are actually true?',
+        description:
+          'A groundedness and citation checker for RAG answers, in pure Python standard library: sentence and clause level claim splitting, token and bigram support scoring against the retrieved passages, exact number matching, a negation check for flips like never expiring, citation validation, and an answer, warn or abstain decision. On eight labelled cases over six support passages it passed all four grounded answers and flagged all four answers with planted hallucinations: precision 1.0, recall 1.0. 6 tests green.',
+        year: '2026',
+        badge: 'Project',
+        tags: ['Python', 'RAG', 'LLM evaluation', 'NLP'],
+        metrics: ['Precision 1.0, recall 1.0', '4 of 4 hallucinations flagged', '6 tests green'],
+        links: [
+          {
+            label: 'View on GitHub',
+            url: 'https://github.com/Jagadeesh5045/AI-builds/tree/main/projects/groundcheck',
+          },
+        ],
+        art: 'linear-gradient(135deg, #111827 0%, #7c2d12 55%, #f97316 100%)',
+      },
+      {
         id: 'sql-session-lab',
         name: 'sql-session-lab',
         tagline: 'Raw clickstream in, honest sessions and funnels out.',
