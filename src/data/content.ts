@@ -48,6 +48,24 @@ export const ROWS: Row[] = [
     subtitle: 'Data analytics: pipelines, models and dashboards',
     items: [
       {
+        id: 'readmission-risk-analytics',
+        name: 'readmission-risk-analytics',
+        tagline: 'Readmissions you can see coming, with reasons you can act on.',
+        description:
+          'Health-sector flagship pairing data analytics with AI: a synthetic hospital discharge pipeline into a SQLite warehouse, with data-quality checks quarantining 75 rows before 8,000 discharges are loaded. SQL analytics show 17.0% of patients readmitted within 30 days, heart failure the highest-risk condition at 21.1%, and patients with 3 or more prior admissions readmitted at 31.6% against 9.8% with none. A Gradient Boosting readmission-risk model (ROC-AUC 0.706) ranks the follow-up queue so the riskiest 10% of patients holds 23.8% of all readmissions, each high-risk patient comes with plain-English reasons, and a management briefing has all 10 of its numbers verified before it goes out. 8 tests green.',
+        year: '2026',
+        badge: 'Flagship',
+        tags: ['Python', 'SQL', 'SQLite', 'Scikit-learn', 'Health analytics'],
+        metrics: ['8,000 records loaded, 75 quarantined', 'Readmission 17.0%, heart failure 21.1%', 'ROC-AUC 0.706, top-decile capture 23.8%'],
+        links: [
+          {
+            label: 'View on GitHub',
+            url: 'https://github.com/Jagadeesh5045/AI-builds/tree/main/flagship/readmission-risk-analytics',
+          },
+        ],
+        art: 'linear-gradient(135deg, #0c1a2e 0%, #155e75 55%, #f59e0b 100%)',
+      },
+      {
         id: 'fraud-signal-analytics',
         name: 'fraud-signal-analytics',
         tagline: 'Fraud you can rank, with reasons you can read.',
@@ -495,7 +513,7 @@ export const PROFILE = {
   rightToWork: 'Graduate visa from December 2026, no sponsorship required.',
   bio: [
     'I am a data analyst and AI engineer in Birmingham, UK. I turn messy data into decisions: SQL and Python analysis, Power BI dashboards, and data pipelines with quality checks you can trust.',
-    'Two years as a Python Developer building data pipelines, reporting workflows and backend services, then an MSc in Artificial Intelligence at Aston University, awarded with Merit. My Pipeline Pulse ETL runs 17 data-quality checks and quarantined 503 bad rows; my Churn-X churn model scores a test ROC-AUC of 0.839 with SHAP explanations.',
+    'Two years as a Python Developer building data pipelines, reporting workflows and backend services, then an MSc in Artificial Intelligence at Aston University. My Pipeline Pulse ETL runs 17 data-quality checks and quarantined 503 bad rows; my Churn-X churn model scores a test ROC-AUC of 0.839 with SHAP explanations.',
     'On the AI side, I build LLM systems that hold up under scrutiny: Code Sage AI, my agentic RAG dissertation project, and RAG Eval Lab, an evaluation harness whose retrieval hits a recall@k of 0.9583.',
     'I am looking for Data Analyst roles first, and AI Engineer roles too, anywhere in the UK. I am available immediately, with a Graduate visa from December 2026 and no sponsorship required.',
     'Every project here ships with code and numbers. Nothing is a mockup.',
@@ -515,6 +533,7 @@ export const PROFILE = {
     'DuckDB',
     'Data engineering and ETL',
     'Fraud and risk analytics',
+    'Health analytics',
     'Scikit-learn',
     'Flask and FastAPI',
     'LLM and RAG systems',
